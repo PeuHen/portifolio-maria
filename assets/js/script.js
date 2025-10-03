@@ -49,7 +49,7 @@
 	// Basic form validation (Bootstrap compatible)
 	const form = select('#contactForm');
 	if (form) {
-		const WHATSAPP_PHONE = '5511947116765'; // Substitua pelo seu número com DDI/DDDs
+		const WHATSAPP_PHONE = '5521982079182'; // Substitua pelo seu número com DDI/DDDs
 		form.addEventListener('submit', function (event) {
 			event.preventDefault();
 			if (!form.checkValidity()) {
