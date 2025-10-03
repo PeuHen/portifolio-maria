@@ -1,0 +1,44 @@
+/* Core spacing and helpers */
+:root {
+    --brand: #0d6efd;
+    --surface: #ffffff;
+    --text: #212529;
+    --muted: #6c757d;
+    --shadow: 0 1rem 2rem rgba(0,0,0,.06);
+}
+
+/* Dark theme removed: keep variables for light theme only */
+
+body {
+    color: var(--text);
+    background: var(--surface);
+}
+
+.placeholder {
+    background: linear-gradient(135deg, rgba(13,110,253,.1), rgba(13,110,253,.2));
+    width: 100%;
+    height: 280px;
+}
+
+/* Cards hover subtle */
+.service-card {
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+}
+
+/* Smooth scroll behavior for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar compact on scroll (toggled via JS) */
+.navbar.is-compact {
+    box-shadow: 0 .25rem .75rem rgba(0,0,0,.05);
+}
+
+/* Minor utilities */
+.text-body-secondary { color: var(--muted) !important; }
+
